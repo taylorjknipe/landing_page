@@ -7,6 +7,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    min-width: 900px;
+    min-height: 100px;
 }
 
 header {
@@ -132,11 +137,26 @@ li a {
 
 .quote-block {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40vh;
     background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    padding: 0 10em;
+    font-weight: 100;
+    display: flex;
+}
+
+.quote-author {
+    font-size: 18px;
+    align-self: flex-end;
+    margin-right: 20em;
 }
 
 .form-block {
