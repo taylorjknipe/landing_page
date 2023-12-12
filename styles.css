@@ -12,7 +12,7 @@ body {
 header {
     height: 55vh;
     background-color: #1F2937;
-    padding: 1em 13em;
+    padding: 1em 12em;
 }
 
 div {
@@ -41,14 +41,49 @@ li a {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding-bottom: 6em;
 }
 
 .main-block {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.text {
+    max-width: 40%;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    max-width: 50%;
+    flex: auto;
+    background-color: gray;
     align-items: center;
-    padding: 7em 0;
-    gap: 2em;
+    justify-content: center;
+    display: flex;
+}
+
+.small{
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    background-color: #3882F6;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 1em;
+    max-width: 5em;
+    margin-top: 1em;
+    border-radius: 7px;
+}
+
+.button a {
+    font-weight: 800;
 }
 
 .info-block {
@@ -93,4 +128,6 @@ h1 {
     font-family: 'Roboto', sans-serif;
     color: #F9FAF8;
     font-weight: 900;
+    text-wrap: wrap;
+    padding: 3px 0;
 }
